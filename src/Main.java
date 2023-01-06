@@ -1,41 +1,75 @@
+import Manager.Manager;
+import Tasks.Epic;
+import Tasks.Task;
+import Tasks.Subtask;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
+
         Manager manager = new Manager();
-        Task task1 = manager.createTask("Приготовить", "Блюдо для ужина");
-        Task task2 = manager.createTask("Убраться", "В квартире");
-        Epic epic1 = manager.createEpic("Приготовить овощи", "Для нарезания");
-        Subtask subtask = manager.createSubtask(epic1.getId(), "Почистить", "картошку");
-        Epic epic2 = manager.createEpic("Выбрать комнату", "начать с зала");
-        Subtask subtask1 = manager.createSubtask(epic2.getId(), "Помыть полы", "Использовать тряпку для пола");
-        Subtask subtask2 = manager.createSubtask(epic2.getId(), "Протереть полки", "Использовать тряпку для пыли");
 
-        System.out.println(task1.toString());
-        System.out.println(task2.toString());
-        System.out.println(epic1.toString());
-        System.out.println(subtask.toString());
-        System.out.println(epic2.toString());
-        System.out.println(subtask1.toString());
-        System.out.println(subtask2.toString());
+        Task task1 = new Task("Убраться", "В квартире", "DONE");
+        Task task2 = new Task("Приготовить", "Блюдо для ужина", "NEW");
 
-        task1.setStatus(Task.IN_PROGRESS_STATUS);
-        manager.updateTask(task1);
-        System.out.println(task1.toString());
+        ArrayList<Subtask> SubtasksEpic1 = new ArrayList<>();
+        Subtask Subtask1Epic1 = new Subtask("Помыть полы", "Использовать тряпку для пола",
+                "NEW");
 
-        task2.setStatus(Task.DONE_STATUS);
-        manager.updateTask(task2);
-        System.out.println(task2.toString());
+        Subtask Subtask2Epic1 = new Subtask("Протереть полки", "Использовать тряпку для пыли",
+                "DONE");
 
-        manager.changeSubtaskStatus(epic1.getId(), subtask.getId(), Task.IN_PROGRESS_STATUS);
-        System.out.println(epic1.toString());
+        SubtasksEpic1.add(Subtask1Epic1);
+        SubtasksEpic1.add(Subtask2Epic1);
 
-        manager.changeSubtaskStatus(epic2.getId(), subtask1.getId(), Task.DONE_STATUS);
-        manager.changeSubtaskStatus(epic2.getId(), subtask2.getId(), Task.IN_PROGRESS_STATUS);
-        System.out.println(epic2.toString());
+        Epic Epic1 = new Epic("Выбрать комнату", "начать с зала", SubtasksEpic1);
 
-        manager.removeIdEpic(epic1.getId());
-        manager.removeIdTask(task1.getId());
+        Subtask Subtask1Epic2 = new Subtask("Почистить","картошку","NEW");
+        ArrayList<Subtask> SubtasksEpic2 = new ArrayList<>();
 
-        System.out.println(manager.getEpics());
-        System.out.println(manager.getTasks());
+        SubtasksEpic2.add(Subtask1Epic2);
+
+        Epic Epic2 = new Epic("Приготовить овощи", "Для нарезания", SubtasksEpic2);
+
+        manager.createTask(task1);
+        manager.createTask(task2);
+        manager.createTask(Subtask1Epic1);
+        manager.createTask(Subtask2Epic1);
+        manager.createTask(Epic1);
+        manager.createTask(Subtask1Epic2);
+        manager.createTask(Epic2);
+
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getTaskStorage()).toArray()));
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getEpicStorage()).toArray()));
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getSubtaskStorage()).toArray()));
+
+        manager.deleteAllTasksOfAnyType(manager.getEpicStorage());
+
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getTaskStorage()).toArray()));
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getEpicStorage()).toArray()));
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getSubtaskStorage()).toArray()));
+
+        for (int i = 0; i <= 8; i++) {
+            System.out.println(manager.getTaskOfAnyTypeById(i));
+        }
+
+        System.out.println(manager.createCopyOfTaskOfAnyType(task1));
+        System.out.println(manager.createCopyOfTaskOfAnyType(Epic1));
+        System.out.println(manager.createCopyOfTaskOfAnyType(Subtask1Epic1));
+
+        manager.updateTaskOfAnyType(5, Epic1);
+        manager.updateTaskOfAnyType(7, Epic2);
+
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getEpicStorage()).toArray()));
+
+        manager.removeTaskOfAnyTypeById(1);
+        manager.removeTaskOfAnyTypeById(2);
+
+        System.out.println(Arrays.toString(manager.getCompleteListOfAnyTasks(manager.getTaskStorage()).toArray()));
+
+
+        System.out.println(manager.getCompleteListOfSubtaskByEpic(Epic1));
+        System.out.println(manager.getCompleteListOfSubtaskByEpic(Epic2));
     }
 }

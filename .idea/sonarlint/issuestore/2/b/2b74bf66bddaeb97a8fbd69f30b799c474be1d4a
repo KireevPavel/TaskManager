@@ -1,0 +1,36 @@
+
+s
+java:S1192)"QDefine a constant instead of duplicating this literal "class Tasks.Task" 3 times.(¯ÓÔ²ýÿÿÿÿ8å¡‰¸Ø0
+{
+java:S11921"YDefine a constant instead of duplicating this literal "class Tasks.Epic$Subtask" 3 times.(Û‹òåÿÿÿÿÿ8æ¡‰¸Ø0
+s
+java:S1192-"QDefine a constant instead of duplicating this literal "class Tasks.Epic" 3 times.(ÝÞ²þùÿÿÿÿ8æ¡‰¸Ø0
+
+java:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(™‡¯™ýÿÿÿÿ8ò¡‰¸Ø0
+‰
+java:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÇõË~8ò¡‰¸Ø0
+
+java:S1319#"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(…˜ù¤ÿÿÿÿÿ8ò¡‰¸Ø0
+’
+java:S13198"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(úšÍýÿÿÿÿ8ó¡‰¸Ø0
+†
+java:S13198"dThe type of "HashMap" should be an interface such as "Map" rather than the implementation "HashMap".(úšÍýÿÿÿÿ8ó¡‰¸Ø0
+†
+java:S1319A"dThe type of "HashMap" should be an interface such as "Map" rather than the implementation "HashMap".(ÃÎßƒÿÿÿÿÿ8ó¡‰¸Ø0
+“
+java:S1319‰"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(–çí©þÿÿÿÿ8ó¡‰¸Ø0
+‹
+java:S1319Ž"hThe type of "Subtasks" should be an interface such as "List" rather than the implementation "ArrayList".(ºÌ¾íÿÿÿÿÿ8ô¡‰¸Ø0
+r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úšÍýÿÿÿÿ8ô¡‰¸Ø0
+r	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÎßƒÿÿÿÿÿ8ô¡‰¸Ø0
+s	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–çí©þÿÿÿÿ8õ¡‰¸Ø0
+s	java:S117Ž"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÌ¾íÿÿÿÿÿ8õ¡‰¸Ø0
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰á¦•ýÿÿÿÿ8ú¡‰¸Ø0
+w	java:S116"VRename this field "EpicStorage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ Üýþÿÿÿÿ8„£‰¸Ø0
+z	java:S116"YRename this field "SubtaskStorage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¸ëýÿÿÿÿ8„£‰¸Ø0
+j
+java:S3008"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÇ„À8„£‰¸Ø0
+>	java:S131(""Add a default case to this switch.(·õýô8£‰¸Ø0
+V
+java:S2864;"4Iterate over the "entrySet" instead of the "keySet".(Ôš´üÿÿÿÿ8–£‰¸Ø0
+>	java:S131d""Add a default case to this switch.(·õýô8œ£‰¸Ø0
