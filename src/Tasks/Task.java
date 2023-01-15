@@ -1,57 +1,74 @@
 package Tasks;
-import Manager.Manager;
+
+import Status.Status;
+
+import java.util.Objects;
+
 public class Task {
+    private String description;
+    private int id;
+    private String name;
+    private Status status;
 
-    private final int id;
-    private final String name;
-    private final String description;
-    private String status;
-
-    public Task(String name, String description, String status) {
-        this.id = Manager.getId() + 1;
-        Manager.setId(this.id);
+    public Task(String name, String description, Status status) {
         this.name = name;
         this.description = description;
         this.status = status;
     }
 
-    Task(String name, String description) {
-        this.id = Manager.getId() + 1;
-        Manager.setId(this.id);
-        this.name = name;
-        this.description = description;
+    public String getDescription() {
+        return description;
     }
 
-    public Task(Task task) {
-        this(task.name, task.description, task.status);
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getId() {
         return id;
     }
-    String getName() {
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
         return name;
     }
 
-    String getDescription() {
-        return description;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task task = (Task) o;
+        return id == task.id && Objects.equals(description, task.description) && Objects.equals(name, task.name)
+                && status == task.status;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(description, id, name, status);
     }
 
     @Override
     public String toString() {
         return "Task{" +
-                "name='" + name + '\'' +
-                ", description='" + description + '\'' +
+                "description='" + description + '\'' +
                 ", id=" + id +
-                ", status='" + status + '\'' +
+                ", name='" + name + '\'' +
+                ", status=" + status +
                 '}';
     }
 }
