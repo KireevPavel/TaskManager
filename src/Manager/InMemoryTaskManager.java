@@ -1,13 +1,11 @@
 package Manager;
+
 import Tasks.Epic;
 import Tasks.Subtask;
 import Tasks.Task;
 import Status.Status;
 
-
-
 import java.util.*;
-
 
 public class InMemoryTaskManager implements TaskManager {
     private static int id = 0;
@@ -190,8 +188,7 @@ public class InMemoryTaskManager implements TaskManager {
         }
     }
 
-    @Override
-    public void updateStatusEpic(Epic epic) {
+    private void updateStatusEpic(Epic epic) {
         if (epics.containsKey(epic.getId())) {
             if (epic.getSubtaskIds().size() == 0) {
                 epic.setStatus(Status.NEW);
