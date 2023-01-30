@@ -1,15 +1,12 @@
 
-t
-java:S1192"RDefine a constant instead of duplicating this literal "ĞĞ¿Ğ¸ÑĞ°Ğ½Ğ¸Ğµ1" 3 times.(ø· ùøÿÿÿÿ8ÓĞê¶Û0
-n
-java:S1192"RDefine a constant instead of duplicating this literal "ĞĞ¿Ğ¸ÑĞ°Ğ½Ğ¸Ğµ2" 3 times.(…„üL8üùê¶Û0
+m
+java:S1192"RDefine a constant instead of duplicating this literal "ĞĞ¿Ğ¸ÑĞ°Ğ½Ğ¸Ğµ1" 3 times.(ø· ùøÿÿÿÿ
+g
+java:S1192"RDefine a constant instead of duplicating this literal "ĞĞ¿Ğ¸ÑĞ°Ğ½Ğ¸Ğµ2" 3 times.(…„üL
 S	java:S106"9Replace this use of System.out or System.err by a logger.(é›ä„úÿÿÿÿ
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(çÙá¿üÿÿÿÿ8îà¶Û0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(‘º¹Ê8‘îà¶Û0
-U	java:S106("9Replace this use of System.out or System.err by a logger.(Áèïÿ8’îà¶Û0
-Z	java:S106*"9Replace this use of System.out or System.err by a logger.(… Ãºşÿÿÿÿ8’îà¶Û0
-X	java:S125,"<This block of commented-out lines of code should be removed.(¿¸‹8’·Û0
-]	java:S125="<This block of commented-out lines of code should be removed.(õÓÄÍıÿÿÿÿ8“·Û0
-]	java:S125O"<This block of commented-out lines of code should be removed.(¦ùÁıÿÿÿÿ8“·Û0
-X	java:S125e"<This block of commented-out lines of code should be removed.(Ê¾…8“·Û0
-]	java:S125y"<This block of commented-out lines of code should be removed.(ıÍŠ¾øÿÿÿÿ8“·Û0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(çÙá¿üÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‘º¹Ê
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(Áèïÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(… Ãºşÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ş£Ùşøÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.( ÅÒÚùÿÿÿÿ
