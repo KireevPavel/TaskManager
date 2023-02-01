@@ -5,6 +5,24 @@ import Tasks.Task;
 import java.util.*;
 
 public class InMemoryHistoryManager implements HistoryManager {
+
+    private final CustomLinkedList list = new CustomLinkedList();
+
+    @Override
+    public void add(Task task) {
+        list.linkLast(task);
+    }
+
+    @Override
+    public void remove(int id) {
+        list.removeNode(list.getNode(id));
+    }
+
+    @Override
+    public List<Task> getHistory() {
+        return list.getTasks();
+    }
+
     private static class CustomLinkedList {
         private final Map<Integer, Node> table = new HashMap<>();
         private Node head;
@@ -71,50 +89,34 @@ public class InMemoryHistoryManager implements HistoryManager {
         }
     }
 
-    private final CustomLinkedList list = new CustomLinkedList();
+    private static class Node {
+        private Task task;
+        private Node prev;
+        private Node next;
 
-    @Override
-    public void add(Task task) {
-        list.linkLast(task);
-    }
+        public Node getNext() {
+            return next;
+        }
 
-    @Override
-    public void remove(int id) {
-        list.removeNode(list.getNode(id));
-    }
+        public Node getPrev() {
+            return prev;
+        }
 
-    @Override
-    public List<Task> getHistory() {
-        return list.getTasks();
-    }
-}
+        public Task getTask() {
+            return task;
+        }
 
-class Node {
-    private Task task;
-    private Node prev;
-    private Node next;
+        public void setNext(Node next) {
+            this.next = next;
+        }
 
-    public Node getNext() {
-        return next;
-    }
+        public void setPrev(Node prev) {
+            this.prev = prev;
+        }
 
-    public Node getPrev() {
-        return prev;
-    }
-
-    public Task getTask() {
-        return task;
-    }
-
-    public void setNext(Node next) {
-        this.next = next;
-    }
-
-    public void setPrev(Node prev) {
-        this.prev = prev;
-    }
-
-    public void setTask(Task task) {
-        this.task = task;
+        public void setTask(Task task) {
+            this.task = task;
+        }
     }
 }
+
