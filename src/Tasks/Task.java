@@ -10,9 +10,9 @@ public class Task {
     private String name;
     private Status status;
 
-    public Task(String name, String description, Status status) {
-        this.name = name;
+    public Task(String description, String name, Status status) {
         this.description = description;
+        this.name = name;
         this.status = status;
     }
 

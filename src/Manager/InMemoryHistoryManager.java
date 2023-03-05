@@ -5,24 +5,6 @@ import Tasks.Task;
 import java.util.*;
 
 public class InMemoryHistoryManager implements HistoryManager {
-
-    private final CustomLinkedList list = new CustomLinkedList();
-
-    @Override
-    public void add(Task task) {
-        list.linkLast(task);
-    }
-
-    @Override
-    public void remove(int id) {
-        list.removeNode(list.getNode(id));
-    }
-
-    @Override
-    public List<Task> getHistory() {
-        return list.getTasks();
-    }
-
     private static class CustomLinkedList {
         private final Map<Integer, Node> table = new HashMap<>();
         private Node head;
@@ -89,34 +71,53 @@ public class InMemoryHistoryManager implements HistoryManager {
         }
     }
 
-    private static class Node {
-        private Task task;
-        private Node prev;
-        private Node next;
+    private final CustomLinkedList list = new CustomLinkedList();
 
-        public Node getNext() {
-            return next;
-        }
+    // Добавление нового просмотра задачи в историю
+    @Override
+    public void add(Task task) {
+        list.linkLast(task);
+    }
 
-        public Node getPrev() {
-            return prev;
-        }
+    // Удаление просмотра из истории
+    @Override
+    public void remove(int id) {
+        list.removeNode(list.getNode(id));
+    }
 
-        public Task getTask() {
-            return task;
-        }
-
-        public void setNext(Node next) {
-            this.next = next;
-        }
-
-        public void setPrev(Node prev) {
-            this.prev = prev;
-        }
-
-        public void setTask(Task task) {
-            this.task = task;
-        }
+    // Получение истории просмотров
+    @Override
+    public List<Task> getHistory() {
+        return list.getTasks();
     }
 }
 
+class Node {
+    private Task task;
+    private Node prev;
+    private Node next;
+
+    public Node getNext() {
+        return next;
+    }
+
+    public Node getPrev() {
+        return prev;
+    }
+
+    public Task getTask() {
+        return task;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
+
+    public void setPrev(Node prev) {
+        this.prev = prev;
+    }
+
+    public void setTask(Task task) {
+        this.task = task;
+    }
+}

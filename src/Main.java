@@ -1,48 +1,36 @@
+import Manager.FileBackedTasksManager;
 import Manager.Managers;
-import Manager.TaskManager;
 import Status.Status;
 import Tasks.Epic;
 import Tasks.Subtask;
 import Tasks.Task;
 
-import java.util.List;
+import java.io.File;
+import java.nio.file.Path;
 
-        public class Main {
+public class Main {
 
-            public static void main(String[] args) {
-                TaskManager taskManager = Managers.getInMemoryTaskManager(Managers.getDefaultHistory());
+    public static void main(String[] args) {
 
-                System.out.println(" Test History ");
-                System.out.println(" Create ");
-                taskManager.createTask(new Task("Task1", "Описание1", Status.NEW));
-                taskManager.createTask(new Task("Task2", "Описание2", Status.NEW));
-                taskManager.createEpic(new Epic("Epic1", "Описание1", Status.NEW));
-                taskManager.createEpic(new Epic("Epic2", "Описание2", Status.NEW));
-                taskManager.createSubtask(new Subtask("Subtask1", "Описание1", Status.NEW, 3));
-                taskManager.createSubtask(new Subtask("Subtask2", "Описание2", Status.NEW, 3));
-                taskManager.createSubtask(new Subtask("Subtask3", "Описание3", Status.NEW, 3));
+        Path path = Path.of("data.csv");
+        File file = new File(String.valueOf(path));
+        FileBackedTasksManager manager = new FileBackedTasksManager(Managers.getDefaultHistory(), file);
 
-                System.out.println(" Get By Id ");
-                taskManager.getTaskById(1);
-                taskManager.getEpicById(3);
-                taskManager.getEpicById(3);
-                taskManager.getEpicById(3);
-                taskManager.getTaskById(1);
-                taskManager.getEpicById(4);
-                taskManager.getSubtaskById(5);
-                taskManager.getSubtaskById(5);
-                taskManager.getSubtaskById(6);
+        Task firstTask = new Task("Сделать задание", "Уроки", Status.NEW);
+        manager.createTask(firstTask);
+        Task secondTask = new Task("Приготовить ужин", "Ужин", Status.NEW);
+        manager.createTask(secondTask);
 
-                System.out.println(" Get History ");
-                List<Task> history = taskManager.getHistory();
-                System.out.println(history);
+        Epic firstEpic = new Epic("Поздравить друзей", "Праздник", Status.NEW);
+        manager.createEpic(firstEpic);
 
-                System.out.println(" Remove from history ");
-                taskManager.remove(1);
-                taskManager.deleteEpicById(3);
+        Subtask firstSubtask = new Subtask("Купить продукты", "Магазин", Status.NEW, firstEpic.getId());
+        manager.createSubtask(firstSubtask);
 
-                List<Task> historyAfterRemove = taskManager.getHistory();
-                System.out.println(historyAfterRemove);
+        manager.getTaskById(firstTask.getId());
+        manager.getTaskById(secondTask.getId());
+        System.out.println();
 
-            }
-        }
+
+    }
+}

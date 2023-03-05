@@ -1,0 +1,7 @@
+id,type,name,status,description,epic
+1,TASK,Уроки,new,Сделать задание,
+2,TASK,Ужин,new,Приготовить ужин,
+3,EPIC,Праздник,new,Поздравить друзей,
+4,SUBTASK,Магазин,new,Купить продукты,3
+
+1,2

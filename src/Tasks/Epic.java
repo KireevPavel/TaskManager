@@ -7,8 +7,8 @@ import java.util.*;
 public class Epic extends Task {
     private final List<Integer> subtaskIds = new ArrayList<>();
 
-    public Epic(String name, String description, Status status) {
-        super(name, description, status);
+    public Epic(String description, String name, Status status) {
+        super(description, name, status);
     }
 
     public List<Integer> getSubtaskIds() {
