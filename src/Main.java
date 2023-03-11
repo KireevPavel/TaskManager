@@ -29,8 +29,6 @@ public class Main {
 
         manager.getTaskById(firstTask.getId());
         manager.getTaskById(secondTask.getId());
-        System.out.println();
-
 
     }
 }

@@ -5,6 +5,8 @@ import Tasks.Task;
 import java.util.*;
 
 public class InMemoryHistoryManager implements HistoryManager {
+
+
     private static class CustomLinkedList {
         private final Map<Integer, Node> table = new HashMap<>();
         private Node head;

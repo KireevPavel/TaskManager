@@ -1,33 +1,33 @@
 
-m
-java:S1192"JDefine a constant instead of duplicating this literal ", status=" 3 times.(é«òÿûÿÿÿÿ8œúë0
-q
-java:S11925"ODefine a constant instead of duplicating this literal "Epic not found" 4 times.(®¥ ¦øÿÿÿÿ8œúë0
-d
-java:S1192ÿ"FDefine a constant instead of duplicating this literal ", id=" 3 times.(øæúÕ8œúë0
-l
-java:S1192€"IDefine a constant instead of duplicating this literal ", name='" 3 times.(‰²Ç×øÿÿÿÿ8œúë0
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰á¦•ıÿÿÿÿ8“œúë0
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(×¶åéøÿÿÿÿ8ºúë0
-Z	java:S1065"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8Àúë0
-Z	java:S106@"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ8Âúë0
-Z	java:S106O"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8Äúë0
-U	java:S106]"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„8Çúë0
-[	java:S106Š"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ8Ìúë0
-[	java:S106“"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ8Îúë0
-V	java:S106œ"9Replace this use of System.out or System.err by a logger.(ÕÙÅÿ8Ïúë0
-[	java:S106µ"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ8Ùúë0
-[	java:S106¿"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8Úúë0
-u
-java:S3776Ä"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(İÉÌöÿÿÿÿÿ8Ûúë0
-\
-java:S1155Æ">Use isEmpty() to check whether the collection is empty or not.(ä‡ıƒ8İúë0
-[	java:S106ç"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8áúë0
-V	java:S106ò"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„8ãúë0
-[	java:S106ù"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ8äúë0
-[	java:S106ı"9Replace this use of System.out or System.err by a logger.( ÔÂìúÿÿÿÿ8åúë0
-[	java:S106‰"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ8æúë0
-[	java:S106"9Replace this use of System.out or System.err by a logger.(¢¹Æğıÿÿÿÿ8çúë0
-[	java:S106š"9Replace this use of System.out or System.err by a logger.(áŒøÿÿÿÿ8èúë0
-V	java:S106"9Replace this use of System.out or System.err by a logger.(Â‹ƒ¸8éúë0
+f
+java:S1192"JDefine a constant instead of duplicating this literal ", status=" 3 times.(é«òÿûÿÿÿÿ
+j
+java:S11925"ODefine a constant instead of duplicating this literal "Epic not found" 4 times.(®¥ ¦øÿÿÿÿ
+]
+java:S1192ÿ"FDefine a constant instead of duplicating this literal ", id=" 3 times.(øæúÕ
+e
+java:S1192€"IDefine a constant instead of duplicating this literal ", name='" 3 times.(‰²Ç×øÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰á¦•ıÿÿÿÿ
+Q
+java:S2696"6Make the enclosing method "static" or remove this set.(×¶åéøÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+N	java:S106]"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ
+T	java:S106“"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ
+O	java:S106œ"9Replace this use of System.out or System.err by a logger.(ÕÙÅÿ
+T	java:S106µ"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ
+T	java:S106¿"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+n
+java:S3776Ä"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(İÉÌöÿÿÿÿÿ
+U
+java:S1155Æ">Use isEmpty() to check whether the collection is empty or not.(ä‡ıƒ
+T	java:S106ç"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+O	java:S106ò"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„
+T	java:S106ù"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ
+T	java:S106ı"9Replace this use of System.out or System.err by a logger.( ÔÂìúÿÿÿÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¢¹Æğıÿÿÿÿ
+T	java:S106š"9Replace this use of System.out or System.err by a logger.(áŒøÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(Â‹ƒ¸
