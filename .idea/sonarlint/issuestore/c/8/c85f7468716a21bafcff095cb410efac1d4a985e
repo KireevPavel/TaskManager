@@ -8,7 +8,5 @@ t	java:S120"ZRename this package name to match the regular expression '^[a-z_
 S	java:S106C"9Replace this use of System.out or System.err by a logger.(… ΓΊώÿÿÿÿ
 S	java:S106E"9Replace this use of System.out or System.err by a logger.(…ό¤‚ωÿÿÿÿ
 M	java:S106L"9Replace this use of System.out or System.err by a logger.(Ϋ‡«[
-d
-java:S6201‡"HReplace this instanceof check and cast with 'instanceof Subtask subtask'(χρΨÿÿÿÿÿ
 b	java:S128«"LEnd this switch case with an unconditional break, return or throw statement.(τ‹€³
 b	java:S128¤"LEnd this switch case with an unconditional break, return or throw statement.( ³¶

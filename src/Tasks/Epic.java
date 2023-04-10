@@ -2,13 +2,20 @@ package Tasks;
 
 import Status.Status;
 
+import java.time.Instant;
 import java.util.*;
 
 public class Epic extends Task {
     private final List<Integer> subtaskIds = new ArrayList<>();
+    private Instant endTime;
 
     public Epic(String description, String name, Status status) {
         super(description, name, status);
+    }
+
+    public Epic(String description, String name, Status status, Instant startTime, long duration) {
+        super(description, name, status, startTime, duration);
+        this.endTime = super.getEndTime();
     }
 
     public List<Integer> getSubtaskIds() {
@@ -17,6 +24,15 @@ public class Epic extends Task {
 
     public void setSubtaskIds(int id) {
         subtaskIds.add(id);
+    }
+
+    @Override
+    public Instant getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Instant endTime) {
+        this.endTime = endTime;
     }
 
     @Override
@@ -40,7 +56,10 @@ public class Epic extends Task {
                 ", description='" + getDescription() + '\'' +
                 ", id=" + getId() +
                 ", name='" + getName() + '\'' +
-                ", status=" + getStatus() +
+                ", status=" + getStatus() + '\'' +
+                ", startTime='" + getStartTime().toEpochMilli() + '\'' +
+                ", endTime='" + getEndTime().toEpochMilli() + '\'' +
+                ", duration='" + getDuration() +
                 '}';
     }
 }
