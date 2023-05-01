@@ -27,6 +27,7 @@ public class FileBackedTasksManager extends InMemoryTaskManager {
         super(historyManager);
         this.file = file;
     }
+
     public static void main(String[] args){
 
         //Менеджер для проверки загрузки из файла
@@ -92,9 +93,9 @@ public class FileBackedTasksManager extends InMemoryTaskManager {
     }
 
     private String readFile(File file){
-        try{
+        try {
             return Files.readString(file.toPath());
-        }catch (IOException e){
+        } catch (IOException e){
             throw new RuntimeException(e);
         }
     }

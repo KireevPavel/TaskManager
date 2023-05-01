@@ -5,6 +5,7 @@ import Tasks.Subtask;
 import Tasks.Task;
 
 import java.util.List;
+import java.util.TreeSet;
 
 public interface TaskManager {
     List<Task> getHistory();
@@ -39,9 +40,12 @@ public interface TaskManager {
 
     List<Task> getAllTasks();
 
+    List<Task> getPrioritizedTasks();
+
     List<Epic> getAllEpics();
 
     List<Subtask> getAllSubtasks();
+
 
     List<Subtask> getAllSubtasksByEpicId(int id);
 

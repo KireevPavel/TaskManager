@@ -21,6 +21,8 @@ T	java:S106Þ"9Replace this use of System.out or System.err by a logger.(ø€Ëü
 T	java:S106é"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
 n
 java:S3776î"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ÝÉÌöÿÿÿÿÿ
+\
+java:S1155ð">Use isEmpty() to check whether the collection is empty or not.(ä‡ýƒ8â×®¤û0
 T	java:S106‘"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
 X
 java:S1117–"<Rename "subtasks" which hides the field declared at line 15.(ä™‹Àùÿÿÿÿ
@@ -35,6 +37,8 @@ i
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(£ûµÎ
 U
 java:S1117‚"9Rename "tasks" which hides the field declared at line 14.(ó‹ˆ£þÿÿÿÿ
+\
+java:S1155„">Use isEmpty() to check whether the collection is empty or not.(Œ¿ç²8ù×®¤û0
 d
 java:S1871‹"MThis branch's code block is the same as the block for the branch on line 392.(ß—óí
 U

@@ -421,7 +421,7 @@ public class InMemoryTaskManager implements TaskManager {
         }
     }
 
-    private List<Task> getPrioritizedTasks() {
+    public List<Task> getPrioritizedTasks() {
         return prioritizedTasks.stream().toList();
     }
 }
