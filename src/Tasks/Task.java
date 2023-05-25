@@ -1,8 +1,10 @@
-package Tasks;
+package tasks;
 
-import Status.Status;
+import status.Status;
 
+import java.time.Duration;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Task {
@@ -10,7 +12,7 @@ public class Task {
     private int id;
     private String name;
     private Status status;
-    private Instant startTime;
+    private transient Instant startTime;
     private long duration;
 
     public Task(String description, String name, Status status) {

@@ -1,8 +1,17 @@
-package Manager;
+package manager;
+
+import http.HTTPTaskManager;
+import http.KVServer;
+
+import java.io.IOException;
 
 public class Managers {
     public static TaskManager getInMemoryTaskManager(HistoryManager historyManager) {
         return new InMemoryTaskManager(historyManager);
+    }
+
+    public static HTTPTaskManager getDefault(HistoryManager historyManager) throws IOException, InterruptedException {
+        return new HTTPTaskManager(historyManager, "http://localhost:" + KVServer.PORT);
     }
 
     public static HistoryManager getDefaultHistory() {

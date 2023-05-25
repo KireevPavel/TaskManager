@@ -1,8 +1,10 @@
-package Tasks;
+package tasks;
 
-import Status.Status;
+import status.Status;
 
+import java.time.Duration;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Subtask extends Task {
@@ -51,3 +53,4 @@ public class Subtask extends Task {
                 '}';
     }
 }
+

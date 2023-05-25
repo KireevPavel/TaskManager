@@ -1,22 +1,21 @@
-package Manager;
+package manager;
 
-import Status.Status;
-import Tasks.Epic;
-import Tasks.Subtask;
-import Tasks.Task;
+import status.Status;
+import tasks.Epic;
+import tasks.Subtask;
+import tasks.Task;
 
 import java.time.Instant;
 import java.util.*;
 
 public class InMemoryTaskManager implements TaskManager {
-    private static int id = 0;
+    private int id = 0;
 
-    public final Map<Integer, Task> tasks = new HashMap<>();
-    public final Map<Integer, Subtask> subtasks = new HashMap<>();
-    public final Map<Integer, Epic> epics = new HashMap<>();
-    public final HistoryManager historyManager;
-    public final Comparator<Task> taskComparator = Comparator.comparing(Task::getStartTime);
-    protected Set<Task> prioritizedTasks = new TreeSet<>(taskComparator);
+    protected Map<Integer, Task> tasks = new HashMap<>();
+    protected Map<Integer, Subtask> subtasks = new HashMap<>();
+    protected Map<Integer, Epic> epics = new HashMap<>();
+    protected HistoryManager historyManager;
+    private final Set<Task> prioritizedTasks = new TreeSet<>(Comparator.comparing(Task::getStartTime));
 
     public InMemoryTaskManager(HistoryManager historyManager) {
         this.historyManager = historyManager;
@@ -421,7 +420,18 @@ public class InMemoryTaskManager implements TaskManager {
         }
     }
 
+    @Override
     public List<Task> getPrioritizedTasks() {
         return prioritizedTasks.stream().toList();
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "tasks=" + tasks +
+                ", subtasks=" + subtasks +
+                ", epics=" + epics +
+                ", historyManager=" + historyManager.getHistory() +
+                '}';
     }
 }

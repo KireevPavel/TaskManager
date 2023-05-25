@@ -1,13 +1,13 @@
-package Tasks;
+package tasks;
 
-import Status.Status;
+import status.Status;
 
 import java.time.Instant;
 import java.util.*;
 
 public class Epic extends Task {
     private final List<Integer> subtaskIds = new ArrayList<>();
-    private Instant endTime;
+    private transient Instant endTime;
 
     public Epic(String description, String name, Status status) {
         super(description, name, status);

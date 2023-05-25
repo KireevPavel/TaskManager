@@ -1,0 +1,16 @@
+
+h
+java:S1192-"FDefine a constant instead of duplicating this literal "name2" 3 times.(βΕλϋÿÿÿÿ8ƒªάϋ„1
+o
+java:S1192-"MDefine a constant instead of duplicating this literal "description2" 3 times.(βΕλϋÿÿÿÿ8ƒªάϋ„1
+h
+java:S1192,"FDefine a constant instead of duplicating this literal "name1" 4 times.(­θριϊÿÿÿÿ8ƒªάϋ„1
+o
+java:S1192,"MDefine a constant instead of duplicating this literal "description1" 4 times.(­θριϊÿÿÿÿ8ƒªάϋ„1
+=
+java:S2326"T is not used in the class.( ΫΑϊωÿÿÿÿ8ªάϋ„1
+{
+java:S2142 "^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ς¶Θ8ªάϋ„1
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(£‹‰…ύÿÿÿÿ8ªάϋ„1
+H
+java:S59603"+Remove this assertion from production code.(³―ίθ8¥ªάϋ„1
