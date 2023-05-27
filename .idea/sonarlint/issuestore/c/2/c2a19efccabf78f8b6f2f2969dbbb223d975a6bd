@@ -1,0 +1,10 @@
+
+s
+java:S1192"QDefine a constant instead of duplicating this literal "application/json" 3 times.(Ô øÜÿÿÿÿÿ8–¡±Ê…1
+o
+java:S1192"MDefine a constant instead of duplicating this literal "Content-Type" 3 times.(Ô øÜÿÿÿÿÿ8–¡±Ê…1
+{
+java:S21423"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ò¶È8§¡±Ê…1
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(Ë£ìüÿÿÿÿ8¨¡±Ê…1
+{
+java:S2142G"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ò¶È8©¡±Ê…1

@@ -1,40 +1,40 @@
 
-m
-java:S1192¼"JDefine a constant instead of duplicating this literal ", status=" 3 times.(é«òÿûÿÿÿÿ8ïÍÖ …1
-q
-java:S1192="ODefine a constant instead of duplicating this literal "Epic not found" 4 times.(®¥ ¦øÿÿÿÿ8ğÍÖ …1
-d
-java:S1192º"FDefine a constant instead of duplicating this literal ", id=" 3 times.(øæúÕ8ğÍÖ …1
-l
-java:S1192»"IDefine a constant instead of duplicating this literal ", name='" 3 times.(‰²Ç×øÿÿÿÿ8ğÍÖ …1
-Z	java:S106="9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8øĞÖ …1
-Z	java:S106I"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ8ùĞÖ …1
-Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8ûĞÖ …1
-U	java:S106i"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„8ıĞÖ …1
-[	java:S106±"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ8„ÑÖ …1
-[	java:S106º"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ8…ÑÖ …1
-V	java:S106Ã"9Replace this use of System.out or System.err by a logger.(ÕÙÅÿ8‡ÑÖ …1
-[	java:S106İ"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ8ŠÑÖ …1
-[	java:S106è"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8‹ÑÖ …1
-u
-java:S3776í"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(İÉÌöÿÿÿÿÿ8ŒÑÖ …1
+f
+java:S1192¼"JDefine a constant instead of duplicating this literal ", status=" 3 times.(é«òÿûÿÿÿÿ
+j
+java:S1192="ODefine a constant instead of duplicating this literal "Epic not found" 4 times.(®¥ ¦øÿÿÿÿ
+]
+java:S1192º"FDefine a constant instead of duplicating this literal ", id=" 3 times.(øæúÕ
+e
+java:S1192»"IDefine a constant instead of duplicating this literal ", name='" 3 times.(‰²Ç×øÿÿÿÿ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+N	java:S106i"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„
+T	java:S106±"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ
+T	java:S106º"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ
+O	java:S106Ã"9Replace this use of System.out or System.err by a logger.(ÕÙÅÿ
+T	java:S106İ"9Replace this use of System.out or System.err by a logger.(ø€Ëüÿÿÿÿ
+T	java:S106è"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+n
+java:S3776í"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(İÉÌöÿÿÿÿÿ
 \
-java:S1155ï">Use isEmpty() to check whether the collection is empty or not.(ä‡ıƒ8ÑÖ …1
-[	java:S106"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ8ÑÖ …1
-_
-java:S1117•"<Rename "subtasks" which hides the field declared at line 15.(ä™‹Àùÿÿÿÿ8ÑÖ …1
-V	java:S106­"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„8–ÑÖ …1
-[	java:S106´"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ8—ÑÖ …1
-[	java:S106¸"9Replace this use of System.out or System.err by a logger.( ÔÂìúÿÿÿÿ8—ÑÖ …1
-[	java:S106Ä"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ8™ÑÖ …1
-[	java:S106È"9Replace this use of System.out or System.err by a logger.(¢¹Æğıÿÿÿÿ8™ÑÖ …1
-[	java:S106Õ"9Replace this use of System.out or System.err by a logger.(áŒøÿÿÿÿ8›ÑÖ …1
-V	java:S106Ù"9Replace this use of System.out or System.err by a logger.(Â‹ƒ¸8œÑÖ …1
-p
-java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(£ûµÎ8¡ÑÖ …1
+java:S1155ï">Use isEmpty() to check whether the collection is empty or not.(ä‡ıƒ8«Ñ˜ğ…1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(®¥ ¦øÿÿÿÿ
+X
+java:S1117•"<Rename "subtasks" which hides the field declared at line 15.(ä™‹Àùÿÿÿÿ
+O	java:S106­"9Replace this use of System.out or System.err by a logger.(ŞÌ¦„
+T	java:S106´"9Replace this use of System.out or System.err by a logger.(Àò®´øÿÿÿÿ
+T	java:S106¸"9Replace this use of System.out or System.err by a logger.( ÔÂìúÿÿÿÿ
+T	java:S106Ä"9Replace this use of System.out or System.err by a logger.(Ÿ½Ô¾úÿÿÿÿ
+T	java:S106È"9Replace this use of System.out or System.err by a logger.(¢¹Æğıÿÿÿÿ
+T	java:S106Õ"9Replace this use of System.out or System.err by a logger.(áŒøÿÿÿÿ
+O	java:S106Ù"9Replace this use of System.out or System.err by a logger.(Â‹ƒ¸
+i
+java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(£ûµÎ
+U
+java:S1117"9Rename "tasks" which hides the field declared at line 14.(ó‹ˆ£şÿÿÿÿ
 \
-java:S1117"9Rename "tasks" which hides the field declared at line 14.(ó‹ˆ£şÿÿÿÿ8¢ÑÖ …1
-\
-java:S1155ƒ">Use isEmpty() to check whether the collection is empty or not.(Œ¿ç²8¢ÑÖ …1
-\
-java:S1117™"9Rename "tasks" which hides the field declared at line 14.(©À¸çıÿÿÿÿ8¥ÑÖ …1
+java:S1155ƒ">Use isEmpty() to check whether the collection is empty or not.(Œ¿ç²8¼Ñ˜ğ…1
+U
+java:S1117™"9Rename "tasks" which hides the field declared at line 14.(©À¸çıÿÿÿÿ

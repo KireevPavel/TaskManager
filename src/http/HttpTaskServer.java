@@ -12,10 +12,11 @@ import java.net.InetSocketAddress;
 public class HttpTaskServer {
     private final HttpServer httpServer;
     private static final int PORT = 8080;
+    private final TaskManager taskManager;
 
     public HttpTaskServer() throws IOException, InterruptedException {
         HistoryManager historyManager = Managers.getDefaultHistory();
-        TaskManager taskManager = Managers.getDefault(historyManager);
+        taskManager = Managers.getDefault(historyManager);
         this.httpServer = HttpServer.create();
         httpServer.bind(new InetSocketAddress(PORT), 0);
         httpServer.createContext("/tasks/task/", new TaskHandler(taskManager));
@@ -25,6 +26,8 @@ public class HttpTaskServer {
         httpServer.createContext("/tasks/history/", new HistoryHandler(taskManager));
         httpServer.createContext("/tasks/", new TasksHandler(taskManager));
     }
+
+    public TaskManager getTaskManager() { return taskManager; }
 
     public void start() {
         httpServer.start();

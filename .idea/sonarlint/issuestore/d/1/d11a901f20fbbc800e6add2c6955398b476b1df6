@@ -10,4 +10,4 @@ java:S1124"EReorder the modifiers to comply with the Java Language Specificati
 o
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¯ûæþ8¹ò¶û„1
 o
-java:S6204P"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ìƒ¸Ž8ÛôÏ …1
+java:S6204P"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ìƒ¸Ž8Á÷œî…1

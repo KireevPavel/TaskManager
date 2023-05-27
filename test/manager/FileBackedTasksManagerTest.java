@@ -21,7 +21,7 @@ import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class FileBackedTasksManagerTest extends TaskManagerTest<InMemoryTaskManager> {
+class FileBackedTasksManagerTest extends TaskManagerTest<FileBackedTasksManager> {
     public static final Path path = Path.of("data.test.csv");
     File file = new File(String.valueOf(path));
     @BeforeEach
