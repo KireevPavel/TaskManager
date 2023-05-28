@@ -3,8 +3,6 @@ C
 src/Tasks/Task.java,a\9\a962177f5938b9e867586b58d9ce80f5b7be47d2
 F
 src/Tasks/Subtask.java,a\a\aa18f893c782867bba5241398b69fba69ac0876e
-Y
-)test/manager/InMemoryTaskManagerTest.java,c\4\c4d5f626665ebd025f6078635fa98c0ba97ad336
 \
 ,test/manager/InMemoryHistoryManagerTest.java,4\7\4794d0970526a03c67ccd4d2f8da25e25d99011b
 >
@@ -13,20 +11,14 @@ U
 %src/manager/ManagerSaveException.java,b\2\b207fff14adeedd30ee8889e9bef0a17154e881c
 ?
 java-kanban.iml,d\f\df5dcbbd3f931c7c23855ccec11732ab4c8544f2
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 R
 "Test/http/HTTPTaskManagerTest.java,3\0\309509f5c4c8ac070ef0bfaae1f0bfd584520ec9
 R
 "src/http/handlers/EpicHandler.java,d\7\d71d74e694d95af382b0d287d0eb328b40ce6d36
 U
 %src/http/handlers/HistoryHandler.java,b\d\bdb09733d712cf2b54b880d871334b2e2b69c429
-P
- src/adapters/InstantAdapter.java,b\2\b2ff305c0b46cea2fb4e6157d39e9540daaa35a5
 V
 &src/adapters/LocalDateTimeAdapter.java,5\e\5e7d408766f9c46c79fda8f499338214b54ca9c9
-Z
-*src/exception/HandlerRequestException.java,0\3\036abd1cddfdd9bc4358e6e68ceda2c4ff47a312
 [
 +src/http/handlers/SubtaskByEpicHandler.java,b\8\b8a605184fce0c95c00d4b94f13b922aab1e2d1e
 U
@@ -53,31 +45,23 @@ J
 src/taskType/TaskType.java,2\c\2cc6c153c28b52bbb84bd297792d74e4537e37d3
 F
 src/tasks/Subtask.java,b\b\bbba77347ddbcc1dcca42f59542c14c2194b0659
-M
-src/http/HTTPTaskManager.java,d\1\d11a901f20fbbc800e6add2c6955398b476b1df6
 L
 src/http/HttpTaskServer.java,3\1\317d55dc379df3ae64df130edfa65c17c0f0f756
 J
 src/http/KVTaskClient.java,c\2\c2a19efccabf78f8b6f2f2969dbbb223d975a6bd
 F
 src/http/KVServer.java,a\e\ae40674e95e069622ed9f1a30d2646559577598e
-R
-"test/http/HTTPTaskManagerTest.java,5\7\57cc8724fd5a104c02d6941059503e4dcfa5f52a
-=
-src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 8
 data.csv,1\a\1aa5784d52481911bc44df0e8b6a8fd581b0518c
-L
-src/manager/TaskManager.java,f\a\faa70362252a04b2ad35762a07b341f056f03658
-\
-,test/manager/FileBackedTasksManagerTest.java,b\2\b29d150b763eff990552401ee11adc404b5b670d
 T
 $src/manager/InMemoryTaskManager.java,a\a\aa928e2b414d2c845d9fdad53e0c5bb8aad86dc4
-I
-src/manager/Managers.java,4\b\4b79e371f7e9c8916da5a120d27cb271963f33ec
-Q
-!test/http/HttpTaskServerTest.java,b\8\b8b67c22958f3d3f94fa1ab58e94b99ebfd8f505
-Q
-!test/manager/TaskManagerTest.java,6\5\65acdcd5f19ef3da98de3f6764a48be93a973c34
 =
 http.test.csv,4\2\423a9b4fbb1836c1e2fd9360634ef40a9fb3f2a0
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+Q
+!test/manager/TaskManagerTest.java,6\5\65acdcd5f19ef3da98de3f6764a48be93a973c34
+L
+src/manager/TaskManager.java,f\a\faa70362252a04b2ad35762a07b341f056f03658
+Y
+)test/manager/InMemoryTaskManagerTest.java,c\4\c4d5f626665ebd025f6078635fa98c0ba97ad336

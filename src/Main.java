@@ -50,7 +50,6 @@ public class Main {
             );
             httpTaskManager.createSubtask(subtask1);
 
-
             httpTaskManager.getTaskById(task1.getId());
             httpTaskManager.getEpicById(epic1.getId());
             httpTaskManager.getSubtaskById(subtask1.getId());
