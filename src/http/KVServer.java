@@ -10,9 +10,6 @@ import java.util.Map;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
 
-/**
- * Постман: https://www.getpostman.com/collections/a83b61d9e1c81c10575c
- */
 public class KVServer {
     public static final int PORT = 8078;
     private final String apiToken;
@@ -28,7 +25,7 @@ public class KVServer {
     }
 
     private void load(HttpExchange httpExchange) {
-        // TODO Добавьте получение значения по ключу
+
         try (httpExchange) {
             System.out.println("\n/load");
             if (!hasAuth(httpExchange)) {
@@ -49,7 +46,7 @@ public class KVServer {
                     return;
                 }
                 String response = data.get(key);
-                sendText(httpExchange, response);
+                sendText(httpExchange, String.valueOf(response));
                 System.out.println("Значение для ключа " + key + " успешно отправлено в ответ на запрос!");
                 httpExchange.sendResponseHeaders(200, 0);
             } else {
@@ -82,7 +79,7 @@ public class KVServer {
                     httpExchange.sendResponseHeaders(400, 0);
                     return;
                 }
-                data.put(key, value);
+                data.put(key, String.valueOf(value));
                 System.out.println("Значение для ключа " + key + " успешно обновлено!");
                 httpExchange.sendResponseHeaders(200, 0);
             } else {

@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Epic extends Task {
     private final List<Integer> subtaskIds = new ArrayList<>();
-    private transient Instant endTime;
+    private Instant endTime;
 
     public Epic(String description, String name, Status status) {
         super(description, name, status);
@@ -53,13 +53,7 @@ public class Epic extends Task {
     public String toString() {
         return "Epic{" +
                 "subtaskIds=" + subtaskIds +
-                ", description='" + getDescription() + '\'' +
-                ", id=" + getId() +
-                ", name='" + getName() + '\'' +
-                ", status=" + getStatus() + '\'' +
-                ", startTime='" + getStartTime().toEpochMilli() + '\'' +
-                ", endTime='" + getEndTime().toEpochMilli() + '\'' +
-                ", duration='" + getDuration() +
+                ", endTime=" + endTime +
                 '}';
     }
 }

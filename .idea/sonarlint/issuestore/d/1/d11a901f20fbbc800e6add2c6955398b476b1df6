@@ -1,0 +1,23 @@
+
+n
+java:S11924"QUse already-defined constant 'KEY_HISTORY' instead of duplicating its value here.(Ç¹Í8·×Ì˜‡1
+l
+java:S1192-"OUse already-defined constant 'KEY_EPICS' instead of duplicating its value here.(óÊ†Æ8·×Ì˜‡1
+l
+java:S1192&"OUse already-defined constant 'KEY_TASKS' instead of duplicating its value here.(¯—•œ8·×Ì˜‡1
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ó‹²8ÿíÇ˜‡1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¦„¹Şüÿÿÿÿ8ÿíÇ˜‡1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ùùŒ­şÿÿÿÿ8ÿíÇ˜‡1
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ƒç¹8ÿíÇ˜‡1
+s
+java:S21595"VRemove this call to "equals"; comparisons between unrelated types always return false.(Í¦ù8“ØÌ˜‡1
+s
+java:S21595"VRemove this call to "equals"; comparisons between unrelated types always return false.(Í¦ù8“ØÌ˜‡1
+`
+java:S1155R">Use isEmpty() to check whether the collection is empty or not.(ş°‚øÿÿÿÿ8†îÇ˜‡1
+o
+java:S6204V"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ìƒ¸8‡îÇ˜‡1

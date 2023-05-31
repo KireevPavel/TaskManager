@@ -1,8 +1,6 @@
 
-m	java:S117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÏñÃ8ù˜¿Ê…1
-R
-java:S2065"0Remove the "transient" modifier from this field.(®öæßøÿÿÿÿ8‚™¿Ê…1
+m	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÏñÃ8¨¶–ñ†1
 Q
-java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8–äŽË…1
+java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8¢²Êñ†1
 V
-java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8–äŽË…1
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¢²Êñ†1

@@ -12,7 +12,7 @@ public class Task {
     private int id;
     private String name;
     private Status status;
-    private transient Instant startTime;
+    private Instant startTime;
     private long duration;
 
     public Task(String description, String name, Status status) {
@@ -78,9 +78,13 @@ public class Task {
     }
 
     public Instant getEndTime() {
+        if(startTime==null){
+            return null;
+        }
         long SECONDS_IN_MINUTE = 60L;
         return startTime.plusSeconds(duration * SECONDS_IN_MINUTE);
     }
+
 
     @Override
     public String toString() {
@@ -88,10 +92,9 @@ public class Task {
                 "description='" + description + '\'' +
                 ", id=" + id +
                 ", name='" + name + '\'' +
-                ", status=" + status + '\'' +
-                ", startTime='" + startTime.toEpochMilli() + '\'' +
-                ", endTime='" + getEndTime().toEpochMilli() + '\'' +
-                ", duration='" + duration +
+                ", status=" + status +
+                ", startTime=" + startTime +
+                ", duration=" + duration +
                 '}';
     }
 

@@ -44,7 +44,7 @@ public class SubtaskHandler implements HttpHandler {
                         if (subtask != null) {
                             response = gson.toJson(subtask);
                         } else {
-                            response = "Подзадача с данным id не найдена";
+                            response = "The subtask with this id was not found";
                         }
                         statusCode = 200;
                     } catch (StringIndexOutOfBoundsException e) {
@@ -72,7 +72,7 @@ public class SubtaskHandler implements HttpHandler {
                         System.out.println("CREATED SUBTASK: " + subtaskCreated);
                         int idCreated = subtaskCreated.getId();
                         statusCode = 201;
-                        response = "Создана подзадача с id=" + idCreated;
+                        response = String.valueOf(idCreated);
                     }
                 } catch (JsonSyntaxException e) {
                     response = "Неверный формат запроса";

@@ -1,6 +1,11 @@
 
 t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(êÑàüÿÿÿÿ8À‘ û„1
-U	java:S106""9Replace this use of System.out or System.err by a logger.(“ŒòÆ8Á‘ û„1
-Z	java:S106*"9Replace this use of System.out or System.err by a logger.(åÔöÿÿÿÿÿÿ8Â‘ û„1
-Z	java:S106J"9Replace this use of System.out or System.err by a logger.(³àşıÿÿÿÿ8Ä‘ û„1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(êÑàüÿÿÿÿ8¡Îò†1
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(“ŒòÆ8¡Îò†1
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(³àşıÿÿÿÿ8Ôºœõ†1
+V
+java:S1128"4Remove this unused import 'adapters.InstantAdapter'.(É›Á©øÿÿÿÿ8šÖõ†1
+Z
+java:S1128"8Remove this unused import 'com.google.gson.GsonBuilder'.(”«à¬ÿÿÿÿÿ8šÖõ†1
+P
+java:S1128".Remove this unused import 'java.time.Instant'.(Â‚éñÿÿÿÿÿ8šÖõ†1

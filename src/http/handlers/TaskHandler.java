@@ -6,6 +6,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
+import manager.Managers;
 import manager.TaskManager;
 import tasks.Task;
 
@@ -16,7 +17,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.Instant;
 
 public class TaskHandler implements HttpHandler {
-    private final Gson gson = new GsonBuilder().registerTypeAdapter(Instant.class, new InstantAdapter()).create();
+    private final Gson gson = Managers.getGson();
     private static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
     private final TaskManager taskManager;
 
@@ -38,9 +39,7 @@ public class TaskHandler implements HttpHandler {
                 String query = httpExchange.getRequestURI().getQuery();
                 if (query == null) {
                     statusCode = 200;
-                    String jsonString = gson.toJson(taskManager.getAllTasks());
-                    System.out.println("GET TASKS: " + jsonString);
-                    response = gson.toJson(jsonString);
+                    response = gson.toJson(taskManager.getAllTasks());
                 } else {
                     try {
                         int id = Integer.parseInt(query.substring(query.indexOf("id=") + 3));
@@ -48,7 +47,7 @@ public class TaskHandler implements HttpHandler {
                         if (task != null) {
                             response = gson.toJson(task);
                         } else {
-                            response = "Задача с данным id не найдена";
+                            response = "Task with this id was not found";
                         }
                         statusCode = 200;
                     } catch (StringIndexOutOfBoundsException e) {
@@ -74,7 +73,7 @@ public class TaskHandler implements HttpHandler {
                         System.out.println("CREATED TASK: " + taskCreated);
                         int idCreated = taskCreated.getId();
                         statusCode = 201;
-                        response = "Создана задача с id=" + idCreated;
+                        response = String.valueOf(idCreated);
                     }
                 } catch (JsonSyntaxException e) {
                     statusCode = 400;

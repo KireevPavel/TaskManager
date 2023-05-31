@@ -36,9 +36,7 @@ public class EpicHandler implements HttpHandler {
                 String query = exchange.getRequestURI().getQuery();
                 if (query == null) {
                     statusCode = 200;
-                    String jsonString = gson.toJson(taskManager.getAllEpics());
-                    System.out.println("GET EPICS: " + jsonString);
-                    response = gson.toJson(jsonString);
+                    response = gson.toJson(taskManager.getAllEpics());
                 } else {
                     try {
                         int id = Integer.parseInt(query.substring(query.indexOf("id=") + 3));
@@ -46,7 +44,8 @@ public class EpicHandler implements HttpHandler {
                         if (epic != null) {
                             response = gson.toJson(epic);
                         } else {
-                            response = "Эпик с данным id не найден";
+                            response = "\n" +
+                                    "Epic with this id was not found";
                         }
                         statusCode = 200;
                     } catch (StringIndexOutOfBoundsException e) {
@@ -73,7 +72,7 @@ public class EpicHandler implements HttpHandler {
                         System.out.println("CREATED EPIC: " + epicCreated);
                         int idCreated = epicCreated.getId();
                         statusCode = 201;
-                        response = "Создан эпик с id=" + idCreated;
+                        response = String.valueOf(idCreated);
                     }
                 } catch (JsonSyntaxException e) {
                     statusCode = 400;

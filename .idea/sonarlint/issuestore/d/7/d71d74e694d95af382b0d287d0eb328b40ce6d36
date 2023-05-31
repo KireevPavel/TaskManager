@@ -1,6 +1,5 @@
 
 o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(›ûè´8Ä´Ÿû„1
-Z	java:S106("9Replace this use of System.out or System.err by a logger.(ÊéÍÝÿÿÿÿÿ8Ç´Ÿû„1
-U	java:S106G"9Replace this use of System.out or System.err by a logger.(¿åº÷8Ê´Ÿû„1
-U	java:S106I"9Replace this use of System.out or System.err by a logger.(»×’Ü8Ê´Ÿû„1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(›ûè´8˜û›õ†1
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(¿åº÷8œû›õ†1
+U	java:S106H"9Replace this use of System.out or System.err by a logger.(»×’Ü8œû›õ†1
